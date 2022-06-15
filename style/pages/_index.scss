@@ -19,7 +19,7 @@ nav {
         margin-top: 1.5em;
 
         input {
-            width: 58em;
+            width: 67.2em;
             border: none;
             background-color: $lightgrey;
             border-radius: 0.3em;
@@ -81,6 +81,62 @@ nav {
         #filter_tools {
             background-color: $red;
             margin-left: 1.25em;
+        }
+    }
+}
+
+//CARDS SECTION
+#cards_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4em;
+    margin-top: 4em;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        height: 22em;
+
+
+        .card_header {
+            width: 100%;
+            height: 100%;
+            background-color: $grey;
+        }
+
+        .card_footer {
+            background-color: $lightgrey;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &_infos {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                h2 {
+                    font-size: 1em;
+                }
+
+                p {
+                    font-weight: bold;
+                }
+
+                p::before {
+                    content: "";
+                    background-image: url(/assets/icons/clock.svg);
+                    background-size: cover;
+                    position: relative;
+                    display: inline-block;
+                    top: 0.15em;
+                    right: 0.4em;
+                    width: 1em;
+                    height: 1em;
+                }
+            }
         }
     }
 }

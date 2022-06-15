@@ -7,8 +7,8 @@
 }
 
 body {
-  width: 62em;
-  max-width: 62em;
+  width: 71.2em;
+  max-width: 71.2em;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,7 +50,7 @@ nav #search_section {
 }
 
 nav #search_section input {
-  width: 58em;
+  width: 67.2em;
   border: none;
   background-color: #E7E7E7;
   border-radius: 0.3em;
@@ -123,5 +123,79 @@ nav #filter_section #filter_devices {
 nav #filter_section #filter_tools {
   background-color: #ED6454;
   margin-left: 1.25em;
+}
+
+#cards_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 4em;
+  margin-top: 4em;
+}
+
+#cards_section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 22em;
+}
+
+#cards_section article .card_header {
+  width: 100%;
+  height: 100%;
+  background-color: #C7BEBE;
+}
+
+#cards_section article .card_footer {
+  background-color: #E7E7E7;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cards_section article .card_footer_infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#cards_section article .card_footer_infos h2 {
+  font-size: 1em;
+}
+
+#cards_section article .card_footer_infos p {
+  font-weight: bold;
+}
+
+#cards_section article .card_footer_infos p::before {
+  content: "";
+  background-image: url(/assets/icons/clock.svg);
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  top: 0.15em;
+  right: 0.4em;
+  width: 1em;
+  height: 1em;
 }
 /*# sourceMappingURL=main.css.map */
