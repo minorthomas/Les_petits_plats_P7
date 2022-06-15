@@ -1,0 +1,90 @@
+//HEADER
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+
+    h1 {
+        color: $primary-color;
+        margin: 0;
+    }
+}
+
+//NAV
+nav {
+
+    #search_section {
+        position: relative;
+        margin-top: 1.5em;
+
+        input {
+            width: 100%;
+            border: none;
+            background-color: $lightgrey;
+            border-radius: 0.3em;
+            font-size: 1.3em;
+            padding: 1em 0;
+
+            &::placeholder {
+                padding-left: 1em;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 0.5em;
+            top: 1em;
+            padding: 0.5em;
+
+            svg {
+                height: 2em;
+            }
+        }
+    }
+
+    #filter_section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+
+        .filter_button {
+            display: flex;
+            width: 10em;
+            border-radius: 0.3em;
+            padding: 1.5em 1em;
+            color: white;
+            text-align: start;
+            justify-content: space-between;
+            transition: 0.4s;
+
+            &:hover {
+                width: 13em;
+            }
+
+            &::after {
+                content: url("/assets/icons/v.svg");
+                transition: 0.4s;
+            }
+
+            &:hover::after {
+                transform: rotate(180deg);
+            }
+
+        }
+
+        #filter_ingredients {
+            background-color: $blue;
+        }
+
+        #filter_devices {
+            background-color: $green;
+            margin-left: 1.25em;
+        }
+
+        #filter_tools {
+            background-color: $red;
+            margin-left: 1.25em;
+        }
+    }
+}

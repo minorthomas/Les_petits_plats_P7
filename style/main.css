@@ -1,0 +1,143 @@
+*::first-letter {
+  text-transform: uppercase;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  width: 992px;
+  max-width: 992px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+
+body button {
+  background-color: transparent;
+  border: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+header h1 {
+  color: #D04F4F;
+  margin: 0;
+}
+
+nav #search_section {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+nav #search_section input {
+  width: 100%;
+  border: none;
+  background-color: #E7E7E7;
+  border-radius: 0.3em;
+  font-size: 1.3em;
+  padding: 1em 0;
+}
+
+nav #search_section input::-webkit-input-placeholder {
+  padding-left: 1em;
+}
+
+nav #search_section input:-ms-input-placeholder {
+  padding-left: 1em;
+}
+
+nav #search_section input::-ms-input-placeholder {
+  padding-left: 1em;
+}
+
+nav #search_section input::placeholder {
+  padding-left: 1em;
+}
+
+nav #search_section button {
+  position: absolute;
+  right: 0.5em;
+  top: 1em;
+  padding: 0.5em;
+}
+
+nav #search_section button svg {
+  height: 2em;
+}
+
+nav #filter_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1em;
+}
+
+nav #filter_section .filter_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+  border-radius: 0.3em;
+  padding: 1.5em 1em;
+  color: white;
+  text-align: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav #filter_section .filter_button:hover {
+  width: 13em;
+}
+
+nav #filter_section .filter_button::after {
+  content: url("/assets/icons/v.svg");
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav #filter_section .filter_button:hover::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav #filter_section #filter_ingredients {
+  background-color: #3282F7;
+}
+
+nav #filter_section #filter_devices {
+  background-color: #68D9A4;
+  margin-left: 1.25em;
+}
+
+nav #filter_section #filter_tools {
+  background-color: #ED6454;
+  margin-left: 1.25em;
+}
+/*# sourceMappingURL=main.css.map */

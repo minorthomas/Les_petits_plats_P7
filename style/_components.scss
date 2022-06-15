@@ -1,0 +1,25 @@
+*::first-letter {
+    text-transform: uppercase;
+}
+
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    width: 992px;
+    max-width: 992px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        color: $black;
+        display: block;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+}
