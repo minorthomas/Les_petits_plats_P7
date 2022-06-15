@@ -19,26 +19,22 @@ nav {
         margin-top: 1.5em;
 
         input {
-            width: 100%;
+            width: 58em;
             border: none;
             background-color: $lightgrey;
             border-radius: 0.3em;
-            font-size: 1.3em;
-            padding: 1em 0;
-
-            &::placeholder {
-                padding-left: 1em;
-            }
+            font-size: 1em;
+            padding: 1em 3em 1em 1em;
         }
 
         button {
             position: absolute;
-            right: 0.5em;
-            top: 1em;
+            right: 0;
+            top: 0.6em;
             padding: 0.5em;
 
             svg {
-                height: 2em;
+                height: 1.5em;
             }
         }
     }
