@@ -7,9 +7,11 @@
 }
 
 body {
+  width: 71.2em;
+  max-width: 71.2em;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body a {
@@ -29,17 +31,17 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1em;
 }
 
 header .svg {
   -webkit-mask: url(/assets/icons/hat.svg) center center/100% 100%;
-  mask: url(/assets/icons/hat.svg) center center/100% 100%;
+          mask: url(/assets/icons/hat.svg) center center/100% 100%;
   background-color: #D04F4F;
   height: 3em;
   width: 3em;
@@ -67,7 +69,7 @@ nav #search_section input {
 
 nav #search_section button {
   -webkit-mask: url(/assets/icons/magnifyingglass.svg) center center/100% 100%;
-  mask: url(/assets/icons/magnifyingglass.svg) center center/100% 100%;
+          mask: url(/assets/icons/magnifyingglass.svg) center center/100% 100%;
   background-color: #000000;
   height: 1.8em;
   width: 1.8em;
@@ -84,8 +86,8 @@ nav #filter_section {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 1em;
 }
 
@@ -99,8 +101,8 @@ nav #filter_section .filter_button {
   color: white;
   text-align: start;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -111,7 +113,7 @@ nav #filter_section .filter_button:hover {
 
 nav #filter_section .filter_button .svg {
   -webkit-mask: url(/assets/icons/v.svg) center center/100% 100%;
-  mask: url(/assets/icons/v.svg) center center/100% 100%;
+          mask: url(/assets/icons/v.svg) center center/100% 100%;
   background-color: #FFFFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -121,7 +123,7 @@ nav #filter_section .filter_button .svg {
 
 nav #filter_section .filter_button:hover .svg {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 nav #filter_section #filter_ingredients {
@@ -142,7 +144,7 @@ nav #filter_section #filter_tools {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   gap: 4em;
   margin-top: 4em;
 }
@@ -153,8 +155,8 @@ nav #filter_section #filter_tools {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 22em;
 }
 
@@ -173,8 +175,8 @@ nav #filter_section #filter_tools {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #cards_section article .card_footer_infos {
@@ -183,13 +185,13 @@ nav #filter_section #filter_tools {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 #cards_section article .card_footer_infos h2 {
@@ -211,5 +213,4 @@ nav #filter_section #filter_tools {
   width: 1em;
   height: 1em;
 }
-
 /*# sourceMappingURL=main.css.map */
