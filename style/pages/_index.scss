@@ -5,9 +5,9 @@ header {
     align-items: center;
     margin-top: 1em;
 
-    .svg {
-        mask: url(assets/icons/hat.svg) center center / 100% 100%;
-        background-color: $primary-color;
+    img {
+        // mask: url(assets/icons/hat.svg) center center / 100% 100%;
+        // background-color: $primary-color;
         height: 3em;
         width: 3em;
     }
