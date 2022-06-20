@@ -40,7 +40,9 @@ header {
 }
 
 header .svg {
-  background: url(/assets/icons/hat.svg) center center/100% 100%;
+  -webkit-mask: url(assets/icons/hat.svg) center center/100% 100%;
+          mask: url(assets/icons/hat.svg) center center/100% 100%;
+  background-color: #D04F4F;
   height: 3em;
   width: 3em;
 }
