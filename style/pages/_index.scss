@@ -8,13 +8,13 @@ header {
     .svg {
         mask: url(/assets/icons/hat.svg) center center / 100% 100%;
         background-color: $primary-color;
-        height: 5em;
-        width: 5em;
+        height: 3em;
+        width: 3em;
     }
 
     h1 {
         color: $primary-color;
-        font-size: 3.5em;
+        font-size: 2em;
         margin: 0;
     }
 }

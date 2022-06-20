@@ -43,13 +43,13 @@ header .svg {
   -webkit-mask: url(/assets/icons/hat.svg) center center/100% 100%;
           mask: url(/assets/icons/hat.svg) center center/100% 100%;
   background-color: #D04F4F;
-  height: 5em;
-  width: 5em;
+  height: 3em;
+  width: 3em;
 }
 
 header h1 {
   color: #D04F4F;
-  font-size: 3.5em;
+  font-size: 2em;
   margin: 0;
 }
 
