@@ -20,17 +20,24 @@ body button {
   border: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 515px) {
   body {
-    margin: 0 2em;
+    width: 30.9em;
+    max-width: 30.9em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 858px) {
+  body {
+    width: 48.5em;
+    max-width: 48.5em;
+  }
+}
+@media screen and (min-width: 1400px) {
   body {
     width: 75em;
     max-width: 75em;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 header {
@@ -60,14 +67,16 @@ nav #search_section input {
   background-color: #E7E7E7;
   border-radius: 0.3em;
   font-size: 1em;
-  padding: 1em 0;
+  padding: 1em 3em 1em 1em;
+  overflow: hidden;
 }
 nav #search_section button {
   position: absolute;
-  right: 0.5em;
+  right: 0em;
   top: 0em;
   padding: 0.8em;
   cursor: pointer;
+  z-index: 0;
 }
 nav #search_section button img {
   height: 2em;
@@ -124,6 +133,7 @@ nav #filter_section #filter_tools {
 #cards_section article {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 22em;
 }
 #cards_section article .card_header {
@@ -131,7 +141,6 @@ nav #filter_section #filter_tools {
   width: 100%;
   height: 100%;
   background-color: #C7BEBE;
-  border-radius: 0.3em 0.3em 0 0;
 }
 #cards_section article .card_header img {
   height: 10em;
@@ -144,7 +153,6 @@ nav #filter_section #filter_tools {
   height: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 0 0 0.3em 0.3em;
 }
 #cards_section article .card_footer_infos {
   display: flex;
@@ -170,29 +178,39 @@ nav #filter_section #filter_tools {
   height: 1em;
 }
 
-@media screen and (min-width: 364px) {
+@media screen and (min-width: 400px) {
   #cards_section article {
-    width: 22em;
-    max-width: 22em;
+    width: 23.75em;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 515px) {
+  #search_section input {
+    width: 26.9em !important;
+    padding: 1em 3em 1em 1em !important;
   }
 }
 @media screen and (min-width: 858px) {
   #cards_section {
     grid-template-columns: 1fr 1fr;
-    gap: 4em;
+    gap: 1.5em;
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media screen and (min-width: 1200px) {
+  #cards_section article {
+    width: 100%;
+  }
+
   #search_section input {
-    width: 71em !important;
-    padding: 1em 3em 1em 1em !important;
+    width: 44.5em !important;
   }
 }
 @media screen and (min-width: 1400px) {
   #cards_section {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #search_section input {
+    width: 71em !important;
   }
 }/*# sourceMappingURL=main.css.map */
