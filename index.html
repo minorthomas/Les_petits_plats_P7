@@ -11,15 +11,16 @@
 
 <body>
     <header>
-        <img src="assets/icons/hat.svg" />
-        <!-- <div class="svg"></div> -->
+        <img src="assets/icons/hat.svg" alt="Toque de cuisinier" />
         <h1>Les petits plats</h1>
     </header>
 
     <nav>
         <div id="search_section">
             <input type="text" maxlength="255" name="search" placeholder="Rechercher une recette" />
-            <button class="svg"></button>
+            <button>
+                <img src="assets/icons/magnifyingglass.svg" alt="Loupe recherche" />
+            </button>
         </div>
         <div id="filter_section">
             <div id="filter_selected"></div>
@@ -84,5 +85,7 @@
         </article>
     </div>
 </body>
+
+<script src="scripts/api.js"></script>
 
 </html>
