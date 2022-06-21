@@ -255,14 +255,14 @@ nav {
     #cards_section {
 
         article {
-            width: 22.7em;
-            max-width: 22.7em;
+            width: 22em;
+            max-width: 22em;
             margin: 0 auto;
         }
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 858px) {
     #cards_section {
         grid-template-columns: 1fr 1fr;
         gap: 4em;

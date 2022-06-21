@@ -25,14 +25,14 @@ body button {
 
 @media screen and (min-width: 576px) {
   body {
-    margin: 0 2em 0 2em;
+    margin: 0 2em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   body {
-    width: 71.2em;
-    max-width: 71.2em;
+    width: 75em;
+    max-width: 75em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -229,13 +229,13 @@ nav #filter_section #filter_tools {
 
 @media screen and (min-width: 364px) {
   #cards_section article {
-    width: 22.7em;
-    max-width: 22.7em;
+    width: 22em;
+    max-width: 22em;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 858px) {
   #cards_section {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
