@@ -68,20 +68,10 @@ nav {
             justify-content: space-between;
             transition: 0.4s;
 
-            &:hover {
-                width: 13em;
-            }
-
-            .svg {
-                mask: url(/assets/icons/v.svg) center center / 100% 100%;
-                background-color: $white;
+            img {
                 transition: 0.4s;
                 height: 1em;
                 width: 1em;
-            }
-
-            &:hover .svg {
-                transform: rotate(180deg);
             }
 
         }

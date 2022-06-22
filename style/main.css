@@ -98,19 +98,10 @@ nav #filter_section .filter_button {
   justify-content: space-between;
   transition: 0.4s;
 }
-nav #filter_section .filter_button:hover {
-  width: 13em;
-}
-nav #filter_section .filter_button .svg {
-  -webkit-mask: url(/assets/icons/v.svg) center center/100% 100%;
-          mask: url(/assets/icons/v.svg) center center/100% 100%;
-  background-color: #FFFFFF;
+nav #filter_section .filter_button img {
   transition: 0.4s;
   height: 1em;
   width: 1em;
-}
-nav #filter_section .filter_button:hover .svg {
-  transform: rotate(180deg);
 }
 nav #filter_section #filter_ingredients {
   background-color: #3282F7;
