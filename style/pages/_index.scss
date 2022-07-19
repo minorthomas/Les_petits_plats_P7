@@ -22,28 +22,32 @@ header {
 nav {
 
     #search_section {
+        display: flex;
+        flex-direction: row;
         margin-top: 1.5em;
-        display: inline-block;
         width: 100%;
-        position: relative;
+        height: 4.3em;
+        background-color: $lightgrey;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0.4em;
 
         input {
-            width: 100%;
             border: none;
-            background-color: $lightgrey;
             border-radius: 0.3em;
             font-size: 1em;
-            padding: 1em 3em 1em 1em;
-            overflow: hidden;
+            gap: 0.5em;
+            background-color: transparent;
+            width: 90%;
+
+            &:focus {
+                outline: none;
+            }
         }
 
         button {
-            position: absolute;
-            right: 0em;
-            top: 0em;
-            padding: 0.8em;
             cursor: pointer;
-            z-index: 0;
+            height: 2em;
 
             img {
                 height: 2em;
@@ -54,50 +58,78 @@ nav {
 
     #filter_section {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 1em;
+        gap: 1em;
+        margin-left: 1em;
 
-        .filter_button {
+        .filter_list {
             display: flex;
-            width: 10em;
-            border-radius: 0.3em;
-            padding: 1.5em 1em;
-            color: white;
-            text-align: start;
-            justify-content: space-between;
-            transition: 0.4s;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 1.25em;
 
-            img {
+            &_button {
+                display: flex;
+                flex-direction: row;
+                width: 10em;
+                height: 4.3em; 
+                border-radius: 0.3em;
+                color: $white;
                 transition: 0.4s;
-                height: 1em;
-                width: 1em;
+                border: none;
+                gap: 0.5em;
+                align-items: center;
+                padding: 0.8em;
+    
+                input {
+                    background-color: transparent;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    color: $white;
+    
+                    &::placeholder {
+                        color: $white;
+                    }
+    
+                    &:focus {
+                        outline: none;
+                    }
+                }
+    
+                img {
+                    transition: 0.4s;
+                    height: 1em;
+                    width: 1em;
+                }
+    
             }
-
+    
+            #filter_ingredients {
+                background-color: $blue;
+            }
+    
+            #filter_devices {
+                background-color: $green;
+            }
+    
+            #filter_tools {
+                background-color: $red;
+            }
         }
-
-        #filter_ingredients {
-            background-color: $blue;
-        }
-
-        #filter_devices {
-            background-color: $green;
-            margin-left: 1.25em;
-        }
-
-        #filter_tools {
-            background-color: $red;
-            margin-left: 1.25em;
-        }
+        
     }
 }
 
 //CARDS SECTION
 
 #cards_section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
     margin-top: 4em;
 
     article {
@@ -105,6 +137,8 @@ nav {
         flex-direction: column;
         width: 100%;
         height: 22em;
+        max-width: 23.75em;
+        margin: 0 auto;
 
 
         .card_header {
@@ -112,6 +146,7 @@ nav {
             width: 100%;
             height: 100%;
             background-color: $grey;
+            border-radius: 0.4em 0.4em 0 0;
 
             img {
                 height: 10em;
@@ -126,6 +161,7 @@ nav {
             height: 100%;
             display: flex;
             flex-direction: column;
+            border-radius: 0 0 0.4em 0.4em; 
 
             &_infos {
                 display: flex;
@@ -157,55 +193,45 @@ nav {
     }
 }
 
-@media screen and (min-width: 400px) {
-    #cards_section {
+// @media screen and (min-width: 515px) {
+//     #search_section {
 
-        article {
-            width: 23.75em;
-            margin: 0 auto;
-        }
-    }
-}
+//         input {
+//             width: 26.9em !important;
+//             padding: 1em 3em 1em 1em !important;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 515px) {
-    #search_section {
+// @media screen and (min-width: 858px) {
+//     #cards_section {
+//         grid-template-columns: 1fr 1fr;
+//         gap: 1.5em;
+//         margin-left: auto;
+//         margin-right: auto;
 
-        input {
-            width: 26.9em !important;
-            padding: 1em 3em 1em 1em !important;
-        }
-    }
-}
+//         article {
+//             width: 100%;
+//         }
+//     }
 
-@media screen and (min-width: 858px) {
-    #cards_section {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5em;
-        margin-left: auto;
-        margin-right: auto;
+//     #search_section {
 
-        article {
-            width: 100%;
-        }
-    }
+//         input {
+//             width: 44.5em !important;
+//         }
+//     }
+// }
 
-    #search_section {
+// @media screen and (min-width: 1400px) {
+//     #cards_section {
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
 
-        input {
-            width: 44.5em !important;
-        }
-    }
-}
+//     #search_section {
 
-@media screen and (min-width: 1400px) {
-    #cards_section {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    #search_section {
-
-        input {
-            width: 71em !important;
-        }
-    }
-}
+//         input {
+//             width: 71em !important;
+//         }
+//     }
+// }

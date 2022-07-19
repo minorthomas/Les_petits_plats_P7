@@ -23,19 +23,24 @@
             </button>
         </div>
         <div id="filter_section">
-            <div id="filter_selected"></div>
+            <div id="filter_selected">Coco</div>
 
-            <button class="filter_button" id="filter_ingredients" active="false">Ingredients
-                <img src="assets/icons/v.svg" alt="Icon V" />
-            </button>
-
-            <button class="filter_button" id="filter_devices" active="false">Appareils
-                <img src="assets/icons/v.svg" alt="Icon V" />
-            </button>
-
-            <button class="filter_button" id="filter_tools" active="false">Ustensiles
-                <img src="assets/icons/v.svg" alt="Icon V" />
-            </button>
+            <div class="filter_list">
+                <button class="filter_list_button" id="filter_ingredients" active="false">
+                    <input placeholder="Ingredients" type="text" maxlength="75">
+                    <img src="assets/icons/v.svg" alt="Icon V" />
+                </button>
+                
+                <button class="filter_list_button" id="filter_devices" active="false">
+                    <input placeholder="Appareils" type="text" maxlength="75">
+                    <img src="assets/icons/v.svg" alt="Icon V" />
+                </button>
+    
+                <button class="filter_list_button" id="filter_tools" active="false">
+                    <input placeholder="Ustensiles" type="text" maxlength="75">
+                    <img src="assets/icons/v.svg" alt="Icon V" />
+                </button>
+            </div>
 
         </div>
     </nav>
