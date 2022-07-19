@@ -191,7 +191,6 @@ nav #filter_section #filter_tools {
   #cards_section article {
     width: 100%;
   }
-
   #search_section input {
     width: 44.5em !important;
   }
@@ -200,7 +199,6 @@ nav #filter_section #filter_tools {
   #cards_section {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   #search_section input {
     width: 71em !important;
   }
