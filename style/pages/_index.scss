@@ -26,7 +26,7 @@ nav {
         flex-direction: row;
         margin-top: 1.5em;
         width: 100%;
-        height: 4.3em;
+        height: 3.5em;
         background-color: $lightgrey;
         justify-content: space-around;
         align-items: center;
@@ -74,7 +74,7 @@ nav {
                 display: flex;
                 flex-direction: row;
                 width: 10em;
-                height: 4.3em; 
+                height: 4.3em;
                 border-radius: 0.3em;
                 color: $white;
                 transition: 0.4s;
@@ -82,44 +82,43 @@ nav {
                 gap: 0.5em;
                 align-items: center;
                 padding: 0.8em;
-    
+
                 input {
                     background-color: transparent;
                     border: none;
                     width: 100%;
                     height: 100%;
                     color: $white;
-    
+
                     &::placeholder {
                         color: $white;
                     }
-    
+
                     &:focus {
                         outline: none;
                     }
                 }
-    
+
                 img {
                     transition: 0.4s;
                     height: 1em;
                     width: 1em;
                 }
-    
+
             }
-    
+
             #filter_ingredients {
                 background-color: $blue;
             }
-    
+
             #filter_devices {
                 background-color: $green;
             }
-    
+
             #filter_tools {
                 background-color: $red;
             }
         }
-        
     }
 }
 
@@ -161,13 +160,14 @@ nav {
             height: 100%;
             display: flex;
             flex-direction: column;
-            border-radius: 0 0 0.4em 0.4em; 
+            border-radius: 0 0 0.4em 0.4em;
 
             &_infos {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: space-between;
+                padding: 0 1em;
 
                 h2 {
                     font-size: 1em;
@@ -189,49 +189,44 @@ nav {
                     height: 1em;
                 }
             }
+
+            &_recipe {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 1em;
+                font-size: 12px;
+                gap: 0.5em;
+
+                &_left {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    gap: 0.4em;
+
+                    p {
+                        font-weight: bold;
+                        margin: 0;
+
+                        span {
+                            font-weight: lighter;
+                        }
+                    }
+                }
+
+                &_right {
+                    width: 50%;
+
+                    p {
+                        margin: 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
         }
     }
 }
-
-// @media screen and (min-width: 515px) {
-//     #search_section {
-
-//         input {
-//             width: 26.9em !important;
-//             padding: 1em 3em 1em 1em !important;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 858px) {
-//     #cards_section {
-//         grid-template-columns: 1fr 1fr;
-//         gap: 1.5em;
-//         margin-left: auto;
-//         margin-right: auto;
-
-//         article {
-//             width: 100%;
-//         }
-//     }
-
-//     #search_section {
-
-//         input {
-//             width: 44.5em !important;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1400px) {
-//     #cards_section {
-//         grid-template-columns: 1fr 1fr 1fr;
-//     }
-
-//     #search_section {
-
-//         input {
-//             width: 71em !important;
-//         }
-//     }
-// }

@@ -41,7 +41,7 @@ nav #search_section {
   flex-direction: row;
   margin-top: 1.5em;
   width: 100%;
-  height: 4.3em;
+  height: 3.5em;
   background-color: #E7E7E7;
   justify-content: space-around;
   align-items: center;
@@ -166,7 +166,8 @@ nav #filter_section .filter_list #filter_tools {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1em;
 }
 #cards_section article .card_footer_infos h2 {
   font-size: 1em;
@@ -184,4 +185,36 @@ nav #filter_section .filter_list #filter_tools {
   right: 0.4em;
   width: 1em;
   height: 1em;
+}
+#cards_section article .card_footer_recipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1em;
+  font-size: 12px;
+  gap: 0.5em;
+}
+#cards_section article .card_footer_recipe_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.4em;
+}
+#cards_section article .card_footer_recipe_left p {
+  font-weight: bold;
+  margin: 0;
+}
+#cards_section article .card_footer_recipe_left p span {
+  font-weight: lighter;
+}
+#cards_section article .card_footer_recipe_right {
+  width: 50%;
+}
+#cards_section article .card_footer_recipe_right p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }/*# sourceMappingURL=main.css.map */
