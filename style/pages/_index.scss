@@ -161,20 +161,27 @@ nav {
             display: flex;
             flex-direction: column;
             border-radius: 0 0 0.4em 0.4em;
+            gap: 0.5em;
 
             &_infos {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0 1em;
+                padding: 1em 0.5em;
+                gap: 1em;
+                align-items: flex-start;
 
                 h2 {
                     font-size: 1em;
+                    max-width: 70%;
+                    margin: 0;
                 }
 
                 p {
                     font-weight: bold;
+                    font-size: 0.85em;
+                    margin: 0;
                 }
 
                 p::before {
@@ -202,7 +209,6 @@ nav {
                     display: flex;
                     flex-direction: column;
                     width: 50%;
-                    gap: 0.4em;
 
                     p {
                         font-weight: bold;

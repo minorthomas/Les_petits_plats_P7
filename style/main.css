@@ -3,7 +3,7 @@
 }
 
 * {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -161,19 +161,26 @@ nav #filter_section .filter_list #filter_tools {
   display: flex;
   flex-direction: column;
   border-radius: 0 0 0.4em 0.4em;
+  gap: 0.5em;
 }
 #cards_section article .card_footer_infos {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 1em 0.5em;
+  gap: 1em;
+  align-items: flex-start;
 }
 #cards_section article .card_footer_infos h2 {
   font-size: 1em;
+  max-width: 70%;
+  margin: 0;
 }
 #cards_section article .card_footer_infos p {
   font-weight: bold;
+  font-size: 0.85em;
+  margin: 0;
 }
 #cards_section article .card_footer_infos p::before {
   content: "";
@@ -198,7 +205,6 @@ nav #filter_section .filter_list #filter_tools {
   display: flex;
   flex-direction: column;
   width: 50%;
-  gap: 0.4em;
 }
 #cards_section article .card_footer_recipe_left p {
   font-weight: bold;
