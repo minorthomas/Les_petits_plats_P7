@@ -6,8 +6,10 @@ async function displayRecipesCard() {
     recipes.forEach(recipe => {
         const createRecipeCard = new Recipe(recipe);
 
-        cardsSection.innerHTML += createRecipeCard.templateDisplayRecipe();
+        cardsSection.innerHTML += createRecipeCard.render();
     });
+
+
 }
 
 displayRecipesCard();

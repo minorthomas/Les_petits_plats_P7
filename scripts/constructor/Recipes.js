@@ -4,14 +4,32 @@ class Recipe {
         this._id = data.id;
         this._name = data.name;
         this._servings = data.servings;
+        this._ingredients = data.ingredients;
         this._time = data.time;
         this._description = data.description;
         this._appliance = data.appliance;
         this._ustensils = data.ustensils;
     }
 
-    templateDisplayRecipe() {
-        return `
+    render() {
+        //set variable à vide
+        let ingredients = "";
+
+        //boucle recup les ingrédients individuellement
+        this._ingredients.forEach((ingr) => {
+            if (ingr.quantity) { //si quantité
+                if (ingr.unit && ingr.quantity) { //si quantité & unité
+                    ingredients += `<p>${ingr.ingredient}: <span>${ingr.quantity} ${ingr.unit}</span></p>`;
+                } else { //si juste quantity
+                    ingredients += `<p>${ingr.ingredient}: <span>${ingr.quantity}</span></p>`;
+                }
+            } else { //si juste ingrédient
+                ingredients += `<p>${ingr.ingredient}</p>`;
+            }
+        });
+
+        //display la recette
+        const recipeCard = `
             <article>
                 <div class="card_header">
                     <img src="assets/icons/no_image_available.svg" alt="Pas d'image" />
@@ -23,7 +41,7 @@ class Recipe {
                     </div>
                     <div class="card_footer_recipe">
                         <div class="card_footer_recipe_left">
-                            <p>test</p>
+                            ${ingredients}
                         </div>
                         <div class="card_footer_recipe_right">
                             <p>${this._description}</p>
@@ -32,5 +50,8 @@ class Recipe {
                 </div>
             </article>
         `
+
+        return recipeCard
     }
 }
+
