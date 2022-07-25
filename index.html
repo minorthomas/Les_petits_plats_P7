@@ -22,19 +22,21 @@
 
     <nav>
         <div id="search_section">
-            <input type="text" maxlength="255" name="search" placeholder="Rechercher une recette" />
+            <input type="text" id="search_input" maxlength="255" name="search" placeholder="Rechercher une recette" />
             <button>
                 <img src="assets/icons/magnifyingglass.svg" alt="Loupe recherche" />
             </button>
         </div>
         <div id="filter_section">
-            <div id="filter_selected">Coco</div>
+            <div id="filter_selected"></div>
 
             <div class="filter_list">
                 <button class="filter_list_button" id="filter_ingredients" active="false">
                     <input placeholder="Ingredients" type="text" maxlength="75">
                     <img src="assets/icons/v.svg" alt="Icon V" />
                 </button>
+                <ul class="filter_list_ingredients">
+                </ul>
 
                 <button class="filter_list_button" id="filter_devices" active="false">
                     <input placeholder="Appareils" type="text" maxlength="75">
@@ -55,10 +57,12 @@
 </body>
 
 <script src="scripts/api.js"></script>
-<script src="scripts/utils/filterBtnZoom.js"></script>
 
 <script src="scripts/constructor/Recipes.js"></script>
 
 <script src="scripts/pages/recipes.js"></script>
+
+<script src="scripts/utils/filterBtnZoom.js"></script>
+<script src="scripts/utils/filters.js"></script>
 
 </html>

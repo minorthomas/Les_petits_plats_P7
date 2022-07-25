@@ -8,8 +8,11 @@ async function displayRecipesCard() {
 
         cardsSection.innerHTML += createRecipeCard.render();
     });
-
-
 }
 
 displayRecipesCard();
+
+
+
+
+
