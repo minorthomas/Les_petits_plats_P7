@@ -517,7 +517,7 @@
       "servings": 2,
       "ingredients": [
         {
-          "ingredient": "Saucisse bretonne ou de toulouse",
+          "ingredient": "Saucisse bretonne",
           "quantity": 2
         },
         {
@@ -965,7 +965,7 @@
           "unit": "gr"
         },
         {
-          "ingredient": "Chocolat noir en pepites",
+          "ingredient": "chocolat noir",
           "quantity": 100,
           "unit": "gr"
         },
